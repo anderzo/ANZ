@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "DS",
+    "title": "Desarrollo Web & Frontend",
+    "description": "Creación de interfaces web modernas, dinámicas y adaptables a cualquier dispositivo (Responsive Design) usando React, HTML5, CSS3 y Bootstrap | tailwind.",
+    "badgeColor": "bg-primary"
+  },
+  {
+    "icon": "BC",
+    "title": "Backend & APIs REST",
+    "description": "Diseño y construcción de arquitecturas backend escalables, servicios web y APIs seguras implementadas con Clean | Capas Architecture en Java con spring boot.",
+    "badgeColor": "bg-success"
+  },
+  {
+    "icon": "BD",
+    "title": "Bases de Datos",
+    "description": "Diseño de esquemas relacionales (PostgreSQL, SQLserver, Oracle), optimización de consultas, Optimización de BD, Eventos sobre tablas, procedimientos almacenados, funciones, CTE & Auditoria.",
+    "badgeColor": "bg-warning text-dark"
+  },
+  {
+    "icon": "RA",
+    "title": "Redes & Automatizacion",
+    "description": "Diseño de esquemas relacionales (Cisco|Junos), optimización de de traifco, gestión de servidores Linux DHCP, DNS, Correo, HTTPS, AD etc.",
+    "badgeColor": "bg-primary text-dark"
+  },
+  {
+    "icon": "ID",
+    "title": "Ing & Ciencia de Datos",
+    "description": "Diseño Modelos predictivos (Python), NumPy, Pandas, Matplotlib, creacion de modelos con Scikit-learn, Gestion, manipulacion, exploracion y tratamientos de datos",
+    "badgeColor": "bg-danger-subtle text-dark"
+  }
+]
