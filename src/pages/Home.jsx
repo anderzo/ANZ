@@ -1,6 +1,7 @@
 import React from 'react';
 import ServiceCard from '../components/ServiceCard';
 import servicesList from '../data/services.json';
+import CvModal from '../components/CvModal';
 
 function Home({ showCvModal, setShowCvModal }) {
   return (
@@ -50,7 +51,7 @@ function Home({ showCvModal, setShowCvModal }) {
             <p className="text-muted">Soluciones integrales de software adaptadas a tus necesidades</p>
           </div>
 
-          {/* componete */}
+          {/* componetes trajetas*/}
           <div className="row g-4">
             {servicesList.map((service, index) => (
               <ServiceCard 
@@ -68,51 +69,7 @@ function Home({ showCvModal, setShowCvModal }) {
       </section>
 
       {/* Modal de CV */}
-      {showCvModal && (
-        <div className="modal show d-block tab-index-1 bg-dark bg-opacity-50" role="dialog">
-          <div className="modal-dialog modal-lg modal-dialog-scrollable">
-            <div className="modal-content">
-              <div className="modal-header bg-dark text-white">
-                <h5 className="modal-title fw-bold">Curriculum Vitae</h5>
-                <button
-                  type="button"
-                  className="btn-close btn-close-white"
-                  onClick={() => setShowCvModal(false)}
-                ></button>
-              </div>
-              <div className="modal-body p-4">
-                <h4 className="fw-bold text-primary">Resumen Profesional</h4>
-                <p>
-                  Estudiante e Ingeniero en Sistemas enfocado en desarrollo backend, arquitecturas de software y gestión de infraestructura de red y servidores.
-                </p>
-                <hr />
-                <h5 className="fw-bold">Habilidades Técnicas</h5>
-                <ul className="list-inline">
-                  <li className="list-inline-item badge bg-secondary p-2 mb-2">Java / Spring Boot</li>
-                  <li className="list-inline-item badge bg-secondary p-2 mb-2">C# / .NET</li>
-                  <li className="list-inline-item badge bg-secondary p-2 mb-2">React / JavaScript / TypeScript</li>
-                  <li className="list-inline-item badge bg-secondary p-2 mb-2">PostgreSQL / MySQL / MongoDB</li>
-                  <li className="list-inline-item badge bg-secondary p-2 mb-2">Docker / Git / Linux</li>
-                  <li className="list-inline-item badge bg-secondary p-2 mb-2">Redes / GNS3 / Cisco</li>
-                </ul>
-                <hr />
-                <h5 className="fw-bold">Educación & Experiencia</h5>
-                <p className="mb-1"><strong>Ingeniería en Sistemas Computacionales</strong></p>
-                <p className="text-muted small">Universidad Nacional Autónoma de Honduras (UNAH)</p>
-              </div>
-              <div className="modal-footer">
-                <button
-                  type="button"
-                  className="btn btn-secondary"
-                  onClick={() => setShowCvModal(false)}
-                >
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+      <CvModal show={showCvModal} onClose={() => setShowCvModal(false)} />
     </>
   );
 }
