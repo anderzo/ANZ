@@ -1,4 +1,5 @@
 import React from 'react';
+import CloseButton from './ui/CloseButton';
 
 function CvModal({ show, onClose }) {
   if (!show) return null; // Si show es false, no se muestra nada
@@ -17,12 +18,14 @@ function CvModal({ show, onClose }) {
             <hr />
                 <h5 className="fw-bold">Habilidades Técnicas</h5>
                 <ul className="list-inline">
-                  <li className="list-inline-item badge bg-secondary p-2 mb-2">Java / Spring Boot</li>
-                  <li className="list-inline-item badge bg-secondary p-2 mb-2">C# / .NET</li>
-                  <li className="list-inline-item badge bg-secondary p-2 mb-2">React / JavaScript / TypeScript</li>
-                  <li className="list-inline-item badge bg-secondary p-2 mb-2">PostgreSQL / MySQL / MongoDB</li>
-                  <li className="list-inline-item badge bg-secondary p-2 mb-2">Docker / Git / Linux</li>
-                  <li className="list-inline-item badge bg-secondary p-2 mb-2">Redes / GNS3 / Cisco</li>
+                  <li className="list-inline-item badge bg-secondary p-2 mb-2">Java / Spring Boot / Docker</li>
+                  <li className="list-inline-item badge bg-secondary p-2 mb-2">React / JavaScript / TypeScript /Tailwind </li>
+                  <li className="list-inline-item badge bg-secondary p-2 mb-2">PostgreSQL / Oracle / MongoDB</li>
+                  <li className="list-inline-item badge bg-secondary p-2 mb-2">Redes / GNS3 / Cisco / Junos</li>
+                  <li className="list-inline-item badge bg-secondary p-2 mb-2">Python / Numpy / Pandas / etc. </li>
+                  <li className="list-inline-item badge bg-secondary p-2 mb-2">Power BI / Excel / R </li>
+                  <li className="list-inline-item badge bg-secondary p-2 mb-2">Linux / Windows / MAC </li>
+                  <li className="list-inline-item badge bg-secondary p-2 mb-2">Git / Github / Jira </li>
                 </ul>
                 <hr />
                 <h5 className="fw-bold">Educación & Experiencia</h5>
@@ -30,9 +33,7 @@ function CvModal({ show, onClose }) {
                 <p className="text-muted small">Universidad Nacional Autónoma de Honduras (UNAH)</p>
           </div>
           <div className="modal-footer">
-            <button type="button" className="btn btn-secondary" onClick={onClose}>
-              Cerrar
-            </button>
+            <CloseButton onClick={onClose} />
           </div>
         </div>
       </div>

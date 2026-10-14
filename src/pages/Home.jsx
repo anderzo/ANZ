@@ -6,36 +6,32 @@ import CvModal from '../components/CvModal';
 function Home({ showCvModal, setShowCvModal }) {
   return (
     <>
-      {/* Sección Hero / Bienvenida */}
-      <section id="inicio" className="text-white py-5 text-center text-md-start" style={{ backgroundColor: '#253f59' }}>
+ {/* Sección Hero / Bienvenida */}
+      <section id="inicio" className="text-white py-5 text-center text-md-start" style={{ backgroundColor: '#0f172a' }}>
         <div className="container py-5">
           <div className="row align-items-center">
             <div className="col-md-7 mb-4 mb-md-0">
-              <span className="badge bg-primary fs-6 mb-3">Desarrollador de Software & Sistemas</span>
+              <span className="badge bg-primary fs-6 mb-3 shadow-sm">Desarrollador de Software & Sistemas</span>
               <h1 className="display-4 fw-bold">
                 Hola, soy <span className="text-primary">Desarrollador Full Stack</span>
               </h1>
-              <p className="lead text-secondary mt-3">
+              <p className="lead text-light opacity-75 mt-3">
                 Especializado en la creación de aplicaciones web escalables, arquitecturas de backend sólidas e integración de sistemas.
               </p>
               <div className="d-flex gap-3 justify-content-center justify-content-md-start mt-4">
-                <button 
-                  className="btn btn-primary btn-lg px-4" 
-                  onClick={() => setShowCvModal(true)}
-                >
-                  Ver Mi CV
-                </button>
-                <a href="#servicios" className="btn btn-outline-light btn-lg px-4">
-                  Mis Servicios
-                </a>
+                <button className="btn btn-primary btn-lg px-4 shadow" onClick={() => setShowCvModal(true)}> Ver Mi CV </button>
+                <a href="#servicios" className="btn btn-outline-light btn-lg px-4 bg-warning border-dark border-2 text-dark"> Mis Servicios </a>
               </div>
             </div>
             <div className="col-md-5 text-center">
-              <div className="p-4 bg-secondary bg-opacity-10 rounded-circle d-inline-block border border-primary border-3 shadow">
-                <img
-                  src="https://via.placeholder.com/220"
-                  alt="Perfil"
-                  className="rounded-circle img-fluid"
+              {/* Contenedor adaptado con un sutil efecto de brillo y fondo oscuro translúcido */}
+              <div className="p-3 bg-dark bg-opacity-50 rounded-circle d-inline-block border border-primary border-2 shadow-lg position-relative" style={{ boxShadow: '0 0 25px rgba(13, 110, 253, 0.2)' }}>
+                <img 
+                  src="src/assets/per.jpg" 
+                  alt="Avatar Desarrollador" 
+                  width={160} 
+                  height={160} 
+                  className="rounded-circle img-fluid object-fit-cover" 
                 />
               </div>
             </div>
@@ -64,10 +60,9 @@ function Home({ showCvModal, setShowCvModal }) {
             ))}
           </div>
           {/* componete */}
-          
+
         </div>
       </section>
-
       {/* Modal de CV */}
       <CvModal show={showCvModal} onClose={() => setShowCvModal(false)} />
     </>
