@@ -27,7 +27,7 @@ function Home({ showCvModal, setShowCvModal }) {
               {/* Contenedor adaptado con un sutil efecto de brillo y fondo oscuro translúcido */}
               <div className="p-3 bg-dark bg-opacity-50 rounded-circle d-inline-block border border-primary border-2 shadow-lg position-relative" style={{ boxShadow: '0 0 25px rgba(13, 110, 253, 0.2)' }}>
                 <img 
-                  src="src/assets/per.jpg" 
+                  src="/per.jpg" 
                   alt="Avatar Desarrollador" 
                   width={160} 
                   height={160} 
