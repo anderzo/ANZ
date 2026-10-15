@@ -16,7 +16,7 @@ function Home({ showCvModal, setShowCvModal }) {
                 Hola, soy <span className="text-primary">Desarrollador Full Stack</span>
               </h1>
               <p className="lead text-light opacity-75 mt-3">
-                Especializado en la creación de aplicaciones web escalables, arquitecturas de backend sólidas e integración de sistemas.
+                Especializado en la creación de aplicaciones web escalables, arquitecturas de backend sólidas e integración de sistemas, integración y matenimieto de redes, y solidos conocimeintos en cienca de datos.
               </p>
               <div className="d-flex gap-3 justify-content-center justify-content-md-start mt-4">
                 <button className="btn btn-primary btn-lg px-4 shadow" onClick={() => setShowCvModal(true)}> Ver Mi CV </button>
@@ -25,15 +25,6 @@ function Home({ showCvModal, setShowCvModal }) {
             </div>
             <div className="col-md-5 text-center">
               {/* Contenedor adaptado con un sutil efecto de brillo y fondo oscuro translúcido */}
-              <div className="p-3 bg-dark bg-opacity-50 rounded-circle d-inline-block border border-primary border-2 shadow-lg position-relative" style={{ boxShadow: '0 0 25px rgba(13, 110, 253, 0.2)' }}>
-                <img 
-                  src="/per.jpg" 
-                  alt="Avatar Desarrollador" 
-                  width={160} 
-                  height={160} 
-                  className="rounded-circle img-fluid object-fit-cover" 
-                />
-              </div>
             </div>
           </div>
         </div>
