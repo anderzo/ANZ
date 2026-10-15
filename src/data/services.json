@@ -26,7 +26,7 @@
   {
     "icon": "ID",
     "title": "Ing & Ciencia de Datos",
-    "description": "Diseño Modelos predictivos (Python), NumPy, Pandas, Matplotlib, creacion de modelos con Scikit-learn, Gestion, manipulacion, exploracion y tratamientos de datos",
+    "description": "Diseño de modelos predictivos con Python, NumPy, Pandas, Matplotlib, creación de modelos con Scikit-learn, gestión, manipulación, exploración y tratamiento de datos.",
     "badgeColor": "bg-danger-subtle text-dark"
   }
 ]

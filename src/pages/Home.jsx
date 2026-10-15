@@ -13,7 +13,7 @@ function Home({ showCvModal, setShowCvModal }) {
             <div className="col-md-7 mb-4 mb-md-0">
               <span className="badge bg-primary fs-6 mb-3 shadow-sm">Desarrollador de Software & Sistemas</span>
               <h1 className="display-4 fw-bold">
-                Hola, soy <span className="text-primary">Desarrollador Full Stack</span>
+                Hola, soy Anderzon <span className="text-primary">Desarrollador Full Stack</span>
               </h1>
               <p className="lead text-light opacity-75 mt-3">
                 Especializado en la creación de aplicaciones web escalables, arquitecturas de backend sólidas e integración de sistemas, integración y matenimieto de redes, y solidos conocimeintos en cienca de datos.
